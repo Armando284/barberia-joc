@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar.astro'
 import Hero from '@/components/hero.astro'
 import YoutubeIntro from '@/components/youtube-intro.astro'
 import Services from '@/components/services.astro'
+import About from '@/components/about.astro'
 ---
 
 <Layout title="Barbería | José Angel">
@@ -11,38 +12,7 @@ import Services from '@/components/services.astro'
 	<Hero />
 	<YoutubeIntro />
 	<Services />
-	<!-- About Section -->
-	<section
-		id="about"
-		class="py-16 bg-white">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-			<h2 class="text-4xl font-extrabold text-gray-900">
-				Sobre Nosotros
-			</h2>
-			<div
-				class="mt-10 flex flex-col md:flex-row md:items-center md:justify-between">
-				<div class="md:w-1/2">
-					<h3 class="text-2xl font-bold text-gray-900">
-						La Experiencia Urban Edge
-					</h3>
-					<p class="mt-4 text-gray-600">
-						En Urban Edge Barbería, nos enorgullecemos de ofrecer
-						una experiencia única y personalizada. Nuestro equipo de
-						barberos profesionales está dedicado a proporcionar los
-						mejores servicios de corte, afeitado y estilismo.
-					</p>
-				</div>
-				<div class="mt-10 md:mt-0 md:w-1/2">
-					<img
-						class="h-64 w-full object-cover rounded-lg"
-						src="assets/images/barber.jpg"
-						alt="Barbería"
-					/>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	<About />
 	<!-- Contact Section -->
 	<section
 		id="contact"
