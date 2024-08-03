@@ -1,3 +1,7 @@
+---
+import ButtonCta from './shared/button-cta.astro'
+---
+
 <!-- Contact Section -->
 <section
 	id="contact"
@@ -8,11 +12,11 @@
 			<p class="text-lg leading-6 text-gray-500">
 				Llámanos al (555) 123-4567 o visítanos en nuestra ubicación.
 			</p>
-			<a
-				href="#"
-				class="cta-button mt-8 bg-yellow-500 text-black py-3 px-6 rounded-full inline-block font-semibold relative overflow-hidden"
-				>Envíanos un mensaje</a
-			>
+
+			<ButtonCta
+				url="#"
+				text="Envíanos un mensaje"
+			/>
 		</div>
 	</div>
 </section>

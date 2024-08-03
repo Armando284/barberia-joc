@@ -1,3 +1,7 @@
+---
+import ButtonCta from './shared/button-cta.astro'
+---
+
 <!-- Hero Section -->
 <div
 	class="relative bg-cover bg-center h-screen"
@@ -12,49 +16,23 @@
 			<p class="mt-4 text-xl">
 				Cortes y estilos para caballeros por José Angel Mederos
 			</p>
-			<a
-				href="#contact"
-				class="cta-button mt-8 bg-yellow-500 text-black py-3 px-6 rounded-full inline-block font-semibold relative overflow-hidden">
-				Reserva tu cita
-			</a>
+
+			<ButtonCta
+				url="#contact"
+				text="Reserva tu cita"
+			/>
 		</div>
 	</div>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+		.font-display {
+			font-family: 'Oswald', sans-serif;
+		}
+
+		.font-light {
+			font-family: 'Poppins', sans-serif;
+		}
+	</style>
 </div>
-
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-
-	.font-display {
-		font-family: 'Oswald', sans-serif;
-	}
-
-	.font-light {
-		font-family: 'Poppins', sans-serif;
-	}
-
-	.cta-button::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 100%;
-		background: rgba(255, 255, 255, 0.3);
-		transition: left 0.3s ease-in-out;
-	}
-
-	.cta-button:hover::after {
-		left: 100%;
-	}
-
-	.cta-button {
-		transition:
-			background-color 0.3s ease-in-out,
-			color 0.3s ease-in-out;
-	}
-
-	.cta-button:hover {
-		background-color: #e6ac00;
-		color: #fff;
-	}
-</style>

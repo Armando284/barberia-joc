@@ -1,0 +1,42 @@
+---
+interface Props {
+	url: string
+	text: string
+}
+
+const { url, text } = Astro.props
+---
+
+<a
+	href={url}
+	class="cta-button mt-8 bg-yellow-500 text-black py-3 px-6 rounded-full inline-block font-semibold relative overflow-hidden">
+	{text}
+</a>
+
+<style is:inline>
+	.cta-button::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.3);
+		transition: left 0.3s ease-in-out;
+	}
+
+	.cta-button:hover::after {
+		left: 100%;
+	}
+
+	.cta-button {
+		transition:
+			background-color 0.3s ease-in-out,
+			color 0.3s ease-in-out;
+	}
+
+	.cta-button:hover {
+		background-color: #e6ac00;
+		color: #fff;
+	}
+</style>
