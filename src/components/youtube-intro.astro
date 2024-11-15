@@ -2,16 +2,16 @@
 const videoId = 'https://www.youtube.com/embed/zSv22gphGKA?si=AByZ1uEvc0EDkCVj' // Reemplaza con tu ID de video de YouTube
 ---
 
-<div class="bg-gray-900 text-gray-300">
+<div class="bg-gradient-to-b from-[#322d2a] to-[#1f1a18] py-32">
 	<div class="inset-0 w-full flex justify-center items-center">
 		<iframe
 			src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`}
 			title="YouTube video player"
-			frameborder="0"
+			frameborder="2"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 			referrerpolicy="strict-origin-when-cross-origin"
 			allowfullscreen
-			class="w-full h-full aspect-video object-cover rounded-lg"
+			class="h-[75dvh] aspect-video object-cover rounded-lg bg-black"
 		></iframe>
 	</div>
 </div>
