@@ -1,8 +1,15 @@
+---
+import { name } from '@/utils'
+
+const year = new Date().getFullYear()
+---
+
 <!-- Footer -->
-<footer class="bg-black py-12">
+<footer class="bg-[#322d2a] py-12">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<p class="text-center text-gray-400">
-			© 2024 Urban Edge Barbería. Todos los derechos reservados.
+		<p class="text-center text-yellow-200">
+			© {year}
+			{name}. Todos los derechos reservados.
 		</p>
 	</div>
 </footer>
