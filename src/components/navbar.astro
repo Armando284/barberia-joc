@@ -3,35 +3,41 @@ import { name } from '@/utils'
 ---
 
 <!-- Navbar -->
-<nav class="bg-black text-white py-6 fixed top-0 right-0 left-0 z-50">
+<nav
+	class="bg-[#322d2a] text-yellow-100 py-2 fixed top-0 right-0 left-0 z-50 shadow-[#161210] shadow-md">
 	<div
 		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
 		<div class="flex items-center">
 			<a
 				href="#"
-				class="text-3xl font-bold"
-				>{name}</a
-			>
+				class="text-3xl font-bold relative overflow-hidden inline-block animation-shine">
+				<img
+					src="assets/images/BRAND_LOGO.png"
+					alt="Tyson barbershop brand logo."
+					width="192"
+					class="w-48 rounded"
+				/>
+			</a>
 		</div>
 		<div class="hidden lg:flex space-x-6 text-lg items-center">
 			<a
 				href="#"
-				class="hover:text-yellow-500 transition duration-300 ease-in-out"
+				class="hover:text-yellow-600 transition duration-300 ease-in-out"
 				>Inicio</a
 			>
 			<a
 				href="#services"
-				class="hover:text-yellow-500 transition duration-300 ease-in-out"
+				class="hover:text-yellow-600 transition duration-300 ease-in-out"
 				>Servicios</a
 			>
 			<a
 				href="#about"
-				class="hover:text-yellow-500 transition duration-300 ease-in-out"
+				class="hover:text-yellow-600 transition duration-300 ease-in-out"
 				>Nosotros</a
 			>
 			<a
 				href="#contact"
-				class="border border-yellow-500 hover:bg-yellow-500 hover:text-black transition duration-300 ease-in-out px-4 py-2 rounded-full"
+				class="border border-yellow-600 hover:bg-yellow-600 hover:text-yellow-950 transition-colors duration-300 ease-in-out px-4 py-2 rounded-full relative animation-shine overflow-hidden"
 				>Contacto</a
 			>
 		</div>
@@ -47,25 +53,25 @@ import { name } from '@/utils'
 	</div>
 	<div
 		id="mobileMenu"
-		class="hidden lg:hidden bg-black text-white space-y-4 p-4">
+		class="hidden lg:hidden bg-[#322d2a] text-yellow-100 space-y-4 p-4">
 		<a
 			href="#"
-			class="block hover:text-yellow-500 transition duration-300 ease-in-out"
+			class="block hover:text-yellow-600 transition duration-300 ease-in-out"
 			>Inicio</a
 		>
 		<a
 			href="#services"
-			class="block hover:text-yellow-500 transition duration-300 ease-in-out"
+			class="block hover:text-yellow-600 transition duration-300 ease-in-out"
 			>Servicios</a
 		>
 		<a
 			href="#about"
-			class="block hover:text-yellow-500 transition duration-300 ease-in-out"
+			class="block hover:text-yellow-600 transition duration-300 ease-in-out"
 			>Nosotros</a
 		>
 		<a
 			href="#contact"
-			class="block w-max border border-yellow-500 hover:bg-yellow-500 hover:text-black transition duration-300 ease-in-out px-4 py-2 rounded-full"
+			class="block w-max border border-yellow-600 hover:bg-yellow-600 hover:text-yellow-950 transition duration-300 ease-in-out px-4 py-2 rounded-full"
 			>Contacto</a
 		>
 	</div>
@@ -77,12 +83,12 @@ import { name } from '@/utils'
 		width: 25px;
 		height: 3px;
 		margin: 5px 0;
-		background-color: #fff;
+		background-color: #ca8a04;
 		transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 
 	.hamburger.open span:nth-child(1) {
-		transform: rotate(45deg) translate(5px, 5px);
+		transform: rotate(45deg) translate(6px, 5px);
 	}
 
 	.hamburger.open span:nth-child(2) {
@@ -91,7 +97,7 @@ import { name } from '@/utils'
 	}
 
 	.hamburger.open span:nth-child(3) {
-		transform: rotate(-45deg) translate(5px, -5px);
+		transform: rotate(-45deg) translate(6px, -5px);
 	}
 
 	.hamburger {
@@ -99,7 +105,7 @@ import { name } from '@/utils'
 	}
 
 	.hamburger:hover span {
-		background-color: #ffbf00;
+		background-color: #ca8a04;
 		transform: scale(1.1);
 	}
 </style>
