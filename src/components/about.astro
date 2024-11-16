@@ -1,16 +1,18 @@
 ---
 import { name } from '@/utils'
+import board from '@/images/IMG_3414.JPG'
+import { Image } from 'astro:assets'
 ---
 
 <!-- About Section -->
 <section
 	id="about"
-	class="py-16 h-screen flex items-center bg-gradient-to-br from-yellow-100 via-yellow-50 to-yellow-200">
+	class="py-8 min-h-[75dvh] flex items-center">
 	<div
 		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-yellow-900">
 		<h2 class="text-4xl font-extrabold text-yellow-950">Sobre Nosotros</h2>
 		<div
-			class="mt-10 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+			class="mt-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
 			<div class="lg:w-1/2">
 				<h3
 					class="text-xl font-bold leading-8 sm:text-3xl sm:leading-9">
@@ -24,10 +26,10 @@ import { name } from '@/utils'
 				</p>
 			</div>
 			<div class="mt-10 lg:mt-0 lg:w-1/2">
-				<img
+				<Image
+					src={board}
+					alt="Cartel"
 					class="w-full max-h-full object-cover rounded-lg mix-blend-multiply contrast-150"
-					src="assets/images/IMG_8646.JPG"
-					alt="Barbería"
 				/>
 			</div>
 		</div>
