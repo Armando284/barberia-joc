@@ -1,12 +1,4 @@
----
-import { Image } from 'astro:assets'
-import backGradient from '@/images/IMG_1109.JPG'
-import sideAndBeard from '@/images/IMG_6549.JPG'
-import modernStyles from '@/images/IMG_9109.JPG'
-import longHair from '@/images/IMG_8893.JPG'
----
-
-<div
+<section
 	class="relative min-h-[90dvh] flex items-center justify-center p-4 px-4 mx-auto sm:px-6 lg:px-8 py-26 text-yellow-900 overflow-hidden bg-pattern">
 	<div class="relative max-w-screen-xl">
 		<div
@@ -122,15 +114,15 @@ import longHair from '@/images/IMG_8893.JPG'
 				<div class="relative space-y-4">
 					<div
 						class="flex items-end justify-center space-x-4 lg:justify-start">
-						<Image
-							src={backGradient}
+						<img
+							src="assets/images/IMG_1109.JPG"
 							alt="Back gradient style."
 							loading="lazy"
 							width="200"
 							class="w-40 rounded-lg shadow-yellow-950 shadow-lg lg:w-56"
 						/>
-						<Image
-							src={sideAndBeard}
+						<img
+							src="assets/images/IMG_6549.JPG"
 							alt="Side and beard style."
 							loading="lazy"
 							width="260"
@@ -139,15 +131,15 @@ import longHair from '@/images/IMG_8893.JPG'
 					</div>
 					<div
 						class="flex items-start justify-center lg:ml-12 space-x-4 lg:justify-start">
-						<Image
-							src={modernStyles}
+						<img
+							src="assets/images/IMG_9109.JPG"
 							alt="Modern style."
 							loading="lazy"
 							width="170"
 							class="w-40 rounded-lg shadow-yellow-950 shadow-lg lg:w-40"
 						/>
-						<Image
-							src={longHair}
+						<img
+							src="assets/images/IMG_8893.JPG"
 							alt="Long hair style."
 							loading="lazy"
 							width="200"
@@ -158,7 +150,7 @@ import longHair from '@/images/IMG_8893.JPG'
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <style is:inline>
 	.bg-pattern::before {
