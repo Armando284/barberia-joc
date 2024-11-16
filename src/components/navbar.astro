@@ -1,5 +1,6 @@
 ---
-import { name } from '@/utils'
+import { Image } from 'astro:assets'
+import brandLogo from '@/images/BRAND_LOGO.png'
 ---
 
 <!-- Navbar -->
@@ -11,9 +12,9 @@ import { name } from '@/utils'
 			<a
 				href="#"
 				class="text-3xl font-bold relative overflow-hidden inline-block animation-shine">
-				<img
-					src="assets/images/BRAND_LOGO.png"
-					alt="Tyson barbershop brand logo."
+				<Image
+					src={brandLogo}
+					alt="Tyson Barbershop logo."
 					width="192"
 					class="w-48 rounded"
 				/>
