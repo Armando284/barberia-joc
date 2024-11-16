@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets'
+import { name } from '@/utils'
+import one from '@/images/IMG_1109.JPG'
+import two from '@/images/IMG_6549.JPG'
+import three from '@/images/IMG_7470.JPG'
+import four from '@/images/IMG_8006.JPG'
+import five from '@/images/IMG_8893.JPG'
+import six from '@/images/IMG_9109.JPG'
+---
+
+<!-- About Section -->
+<section
+	id="about"
+	class="py-16 min-h-[90dvh] flex items-center bg-amber-600">
+	<div
+		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-yellow-900">
+		<h2 class="text-4xl font-extrabold text-amber-950">Nuestro Trabajo</h2>
+		<div
+			class="mt-10 grid grid-cols-3 shadow-amber-800 shadow-md rounded-md overflow-hidden">
+			<div class="bg-slate-950 flex justify-center items-center">
+				<Image
+					src={one}
+					alt="one"
+					loading="lazy"
+				/>
+			</div>
+			<div class="bg-slate-950 flex justify-center items-center">
+				<Image
+					src={two}
+					alt="two"
+					loading="lazy"
+				/>
+			</div>
+			<div class="bg-slate-950 flex justify-center items-center">
+				<Image
+					src={three}
+					alt="three"
+					loading="lazy"
+				/>
+			</div>
+			<div class="bg-slate-950 flex justify-center items-center">
+				<Image
+					src={four}
+					alt="four"
+					loading="lazy"
+				/>
+			</div>
+			<div class="bg-slate-950 flex justify-center items-center">
+				<Image
+					src={five}
+					alt="five"
+					loading="lazy"
+				/>
+			</div>
+			<div class="bg-slate-950 flex justify-center items-center">
+				<Image
+					src={six}
+					alt="six"
+					loading="lazy"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
