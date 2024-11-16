@@ -1,14 +1,24 @@
+---
+import { Image } from 'astro:assets'
+import tomHardy from '@/images/IMG_8006.JPG'
+---
+
 <div
-	class="h-[60dvh] flex items-center justify-center px-5 py-5 mt-10 lg:mt-0 bg-gradient-to-r from-yellow-100 via-yellow-50 to-yellow-100">
+	class="h-[60dvh] flex flex-col items-center justify-center gap-16 px-5 py-5 mt-10 lg:mt-0 bg-gradient-to-r from-yellow-100 via-yellow-50 to-yellow-100">
+	<h2
+		class="text-center lg:text-left text-4xl font-extrabold text-yellow-950">
+		Testimonios
+	</h2>
 	<div
 		class="w-full max-w-xl px-5 pt-5 pb-10 mx-auto text-yellow-900 bg-yellow-500 rounded-lg shadow-yellow-950/50 shadow-lg">
 		<div class="w-full pt-1 pb-5 mx-auto -mt-16 text-center">
 			<a
 				href="#"
 				class="relative block">
-				<img
-					alt="profil"
-					src="./assets/images/IMG_8006.JPG"
+				<Image
+					src={tomHardy}
+					alt="Client Tom Hardy picture."
+					loading="lazy"
 					class="mx-auto object-cover rounded-full h-20 w-20 bg-yellow-800"
 				/>
 			</a>
