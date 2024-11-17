@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <nav
-	class="bg-[#322d2a] text-yellow-100 py-2 fixed top-0 right-0 left-0 z-50 shadow-[#161210] shadow-md">
+	class="bg-slate-950 text-blue-100 py-2 fixed top-0 right-0 left-0 z-50 shadow-slate-950/70 shadow-md">
 	<div
 		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
 		<div class="flex items-center">
@@ -8,7 +8,7 @@
 				href="#"
 				class="text-3xl font-bold relative overflow-hidden inline-block animation-shine">
 				<img
-					src="assets/images/BRAND_LOGO.png"
+					src="assets/images/BRAND_LOGO_BLUE.png"
 					alt="Tyson Barbershop logo."
 					width="192"
 					class="w-48 rounded"
@@ -18,22 +18,22 @@
 		<div class="hidden lg:flex space-x-6 text-lg items-center">
 			<a
 				href="#"
-				class="hover:text-yellow-600 transition duration-300 ease-in-out"
+				class="hover:text-blue-400 transition duration-300 ease-in-out"
 				>Inicio</a
 			>
 			<a
 				href="#services"
-				class="hover:text-yellow-600 transition duration-300 ease-in-out"
+				class="hover:text-blue-400 transition duration-300 ease-in-out"
 				>Servicios</a
 			>
 			<a
 				href="#about"
-				class="hover:text-yellow-600 transition duration-300 ease-in-out"
+				class="hover:text-blue-400 transition duration-300 ease-in-out"
 				>Nosotros</a
 			>
 			<a
 				href="#contact"
-				class="border border-yellow-600 hover:bg-yellow-600 hover:text-yellow-950 transition-colors duration-300 ease-in-out px-4 py-2 rounded-full relative animation-shine overflow-hidden"
+				class="border border-blue-400 hover:bg-blue-400 hover:text-blue-950 transition-colors duration-300 ease-in-out px-4 py-2 rounded-full relative animation-shine overflow-hidden"
 				>Contacto</a
 			>
 		</div>
@@ -49,25 +49,25 @@
 	</div>
 	<div
 		id="mobileMenu"
-		class="hidden lg:hidden bg-[#322d2a] text-yellow-100 space-y-4 p-4">
+		class="hidden lg:hidden bg-slate-950 text-blue-100 space-y-4 p-4">
 		<a
 			href="#"
-			class="block hover:text-yellow-600 transition duration-300 ease-in-out"
+			class="block hover:text-blue-400 transition duration-300 ease-in-out"
 			>Inicio</a
 		>
 		<a
 			href="#services"
-			class="block hover:text-yellow-600 transition duration-300 ease-in-out"
+			class="block hover:text-blue-400 transition duration-300 ease-in-out"
 			>Servicios</a
 		>
 		<a
 			href="#about"
-			class="block hover:text-yellow-600 transition duration-300 ease-in-out"
+			class="block hover:text-blue-400 transition duration-300 ease-in-out"
 			>Nosotros</a
 		>
 		<a
 			href="#contact"
-			class="block w-max border border-yellow-600 hover:bg-yellow-600 hover:text-yellow-950 transition duration-300 ease-in-out px-4 py-2 rounded-full"
+			class="block w-max border border-blue-400 hover:bg-blue-400 hover:text-blue-950 transition duration-300 ease-in-out px-4 py-2 rounded-full"
 			>Contacto</a
 		>
 	</div>
@@ -79,7 +79,8 @@
 		width: 25px;
 		height: 3px;
 		margin: 5px 0;
-		background-color: #ca8a04;
+		/* background-color: #ca8a04; */
+		@apply bg-blue-400;
 		transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 
@@ -101,7 +102,8 @@
 	}
 
 	.hamburger:hover span {
-		background-color: #ca8a04;
+		/* background-color: #ca8a04; */
+		@apply bg-blue-400;
 		transform: scale(1.1);
 	}
 </style>
