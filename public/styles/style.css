@@ -16,3 +16,29 @@ body {
 .animation-shine:hover::after {
   left: 100%;
 }
+
+.bg-pattern::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url('../assets/images/IMG_8646.JPG');
+  background-size: 500px;
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
+  filter: invert(1) contrast(2);
+  background-color: #1d4ed8;
+  opacity: 0.1;
+  filter: saturate(50%);
+  transform: rotate(30deg);
+  transform-origin: center;
+  z-index: 0;
+}
+
+.font-brand {
+  font-family: "Rye", serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
